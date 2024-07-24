@@ -21,7 +21,7 @@ const OrganizedComps = () => {
                   alt="gallery"
                 />
                 <img
-                  src="./assets/images/logo/IYSA.png"
+                  src="./assets/images/logo/logo-ITP3.png"
                   className="ms-1 col-6 image-udayana"
                   alt="gallery"
                 />

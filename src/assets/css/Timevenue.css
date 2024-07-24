@@ -59,11 +59,12 @@
 
   @media (max-width: 428px) {
     .time_venue .Organized-by .organized-image .image-iysa {
-        margin: 10px !important;
+      padding-top: 50px;
+        margin: 5px !important;
         width: 300px !important;
       }
       .time_venue .Organized-by .organized-image .image-udayana{
-        margin: 10px !important;
+        margin: 5px !important;
         width: 300px !important;
       }
   }

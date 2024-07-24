@@ -10,7 +10,7 @@ const HeroComps = () =>{
                 <p>Bali International Science Fair registration is now open! Join <br /> this prestigious event and have an unforgettable experience!
                 </p>
                  <br />
-                <a href="#" target="_blank" className="registration-button">Registration Here</a>
+                <a href="#" target="_blank" className="registration-button">Coming Soon</a>
             </div>
         </section>
         </> 

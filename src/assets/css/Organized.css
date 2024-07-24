@@ -18,7 +18,7 @@
     -o-transition: 0.4s;
   }
   .event_sponser_area .Organized-by .organized-image .image-udayana {
-    max-width: 270px;
+    max-width: 400px;
     /* margin-top: 200px; */
     margin: 40px;
     justify-content: center;
@@ -55,10 +55,12 @@
       padding-bottom: 10px;
     }
     .event_sponser_area .Organized-by .organized-image .image-iysa {
+      padding-top: 50px;
         margin: 10px !important;
       }
       .event_sponser_area .Organized-by .organized-image .image-udayana {
         margin: 10px !important;
+        width: 250px;
       }
   }
   /* ------------------------- Organized end ------------------------ */
