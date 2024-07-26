@@ -6,6 +6,7 @@ import FooterComps from "../components/FooterComps";
 import CategoryComps from "../components/home/CategoryComps";
 import OrganizedComps from "../components/home/OrganizedComps";
 import TimevenueComps from "../components/home/TimevenueComps";
+import BoothposterComps from "../components/home/BoothposterComps";
 
 
 function Landing () {
@@ -17,7 +18,9 @@ function Landing () {
             <CategoryComps />
             <OrganizedComps />
             <TimevenueComps />
+            <BoothposterComps />
             <FooterComps />
+            
             
         </div>
     );
