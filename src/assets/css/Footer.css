@@ -38,10 +38,10 @@ footer {
   }
       .footer-section .footer-heading {
         font-size: 19px;
-        color: rgba(255, 255, 255, 0.9);
+        color: #000;
         margin-bottom: 20px; }
         .footer-section .footer-heading .logo {
-          color: #fff;
+          color: #000;
           text-transform: uppercase; }
           .footer-section a {
         color: #bba387; }
@@ -53,7 +53,7 @@ footer {
         .footer-section .list-unstyled li a {
         color: rgba(255, 255, 255, 0.4); }
         .footer-section .list-unstyled li a:hover {
-          color: #fff; }
+          color: #000; }
           .footer-section .list-unstyled a {
             color: rgba(255, 255, 255, 0.4);
             font-size: 13px; }
