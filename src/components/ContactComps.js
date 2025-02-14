@@ -62,7 +62,7 @@ function ContactComps() {
                         <div className="info">
                             <div className="information">
                                 <img src="./assets/images/icon/location.png" className="contact-icon" alt="" />
-                                <a href='https://goo.gl/maps/9x18coXGCmSscKec6' target='_blank'>Jl. Kemang No. 63 RT 03 RW 06</a>
+                                <a href='https://goo.gl/maps/9x18coXGCmSscKec6' target='_blank'>Jl. Kemang RT 03 RW 06</a>
                             </div>
                             <div className="information">
                                 <img src="./assets/images/icon/email.png" className="contact-icon" alt="" />
@@ -70,7 +70,7 @@ function ContactComps() {
                             </div>
                             <div className="information">
                                 <img src="./assets/images/icon/phone.png" className="contact-icon" alt="" />
-                                <a href='https://wa.me/+6281770914129' target='_blank'>+62817-7091-4129</a>
+                                <a href='https://wa.me/+6288213248890' target='_blank'>+62 882-1324-8890</a>
                             </div>
                         </div>
 
@@ -80,7 +80,7 @@ function ContactComps() {
                                 <a href="https://www.facebook.com/profile.php?id=100063979907207" target='_blank'>
                                     <i className="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="https://www.instagram.com/iyc.olympiad/" target='_blank'>
+                                <a href="https://www.instagram.com/iysa_official/" target='_blank'>
                                     <i className="fab fa-instagram"></i>
                                 </a>
                                 <a href="https://www.youtube.com/@IYSAOfficial" target='_blank'>

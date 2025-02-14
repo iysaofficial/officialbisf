@@ -37,14 +37,14 @@ function FooterComps() {
                                     {/* <li><a href="#" className="py-1 d-block"><i className="fa fa-registered me-1"></i>Registration Link</a></li> */}
                                     <li><a href="/Contact" className="py-1 d-block fw-bold"><i className="fa fa-address-book me-1 fw-bold"></i>Contact</a></li>
                                     <li><a href="/faq" className="py-1 d-block fw-bold"><i className="fab fa-question me-1 fw-bold"></i>FAQ</a></li>
-                                    <li><a href="https://www.iysaolympiad.or.id/" target="_blank" className="py-1 d-block fw-bold"><i className="fa fa-house me-1"></i>Our Main Website</a></li>
+                                    <li><a href="https://www.iysa.or.id/" target="_blank" className="py-1 d-block fw-bold"><i className="fa fa-house me-1"></i>Our Main Website</a></li>
                                 </ul>
 							</div>
 							<div className="col-md-4 mb-md-0 mb-4 border-left">
 								<h2 className="footer-heading fw-bold">Contact Info</h2>
 								<ul className="list-unstyled">
-                                    <li><a href="https://goo.gl/maps/gEzFyE9gtXEyRfA26" className="py-1 d-block fw-bold" target="_blank"> <i className="fa fa-map-marker me-1"></i> Jl. Kemang No. 63 RT 03 RW 06</a></li>
-                                    <li><a href="https://wa.me/6281770914129" className="py-1 d-block fw-bold" target="_blank"><i className="fa fa-phone me-1"></i>+6281770914129</a></li>
+                                    <li><a href="https://goo.gl/maps/gEzFyE9gtXEyRfA26" className="py-1 d-block fw-bold" target="_blank"> <i className="fa fa-map-marker me-1"></i> Jl. Kemang RT 03 RW 06</a></li>
+                                    <li><a href="https://wa.me/6281770914129" className="py-1 d-block fw-bold" target="_blank"><i className="fa fa-phone me-1"></i>+6288213248890</a></li>
                                     <li><a href="mailto:wso.iysa@gmail.com" target="_blank" className="py-1 d-block fw-bold"><i className="fa fa-envelope me-1"></i>bisf.iysa@gmail.com</a></li>
                                 </ul>
 							</div>

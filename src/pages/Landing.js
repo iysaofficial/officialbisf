@@ -17,7 +17,7 @@ function Landing () {
             <AboutComps />
             <CategoryComps />
             <OrganizedComps />
-            <TimevenueComps />
+            {/* <TimevenueComps /> */}
             <BoothposterComps />
             <FooterComps />
             
