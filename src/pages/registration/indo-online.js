@@ -47,7 +47,7 @@ function IndonesiaOnline() {
 
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
-      case "Online Competition":
+      case "Bali International Science Fair - Online Competition":
         setCategoryPrice("RP 950.000");
         break;
       default:
@@ -233,7 +233,7 @@ function IndonesiaOnline() {
                     required
                   >
                     <option value="">--Pilih Kategori Kompetisi--</option>
-                    <option value="Online Competition">
+                    <option value="Bali International Science Fair - Online Competition">
                       Online Competition
                     </option>
                   </select>

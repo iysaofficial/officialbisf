@@ -47,9 +47,9 @@ export default function InternationalOffline() {
 
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
-      case "Offline Competition":
+      case "Bali International Science Fair - Offline Competition":
         break;
-      case "Offline Competition + Full Package":
+      case "Bali International Science Fair - Offline Competition + Full Package":
         break;
       default:
         break;
@@ -237,10 +237,10 @@ export default function InternationalOffline() {
                     onChange={handleCategoryChange}
                   >
                     <option value="">--Choose Category Competition--</option>
-                    <option value="Offline Competition">
+                    <option value="Bali International Science Fair - Offline Competition">
                       Offline Competition
                     </option>
-                    <option value="Offline Competition + Full Package">
+                    <option value="Bali International Science Fair - Offline Competition + Full Package">
                       Offline Competition + Full Package
                     </option>
                   </select>
