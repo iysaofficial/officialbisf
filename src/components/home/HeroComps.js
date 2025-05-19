@@ -13,8 +13,8 @@ const HeroComps = () => {
           </p>
           <br />
           <div className="row text-center mx-auto col-lg-12">
-            <a href="/Homeregist" className="registration-button m-2 mx-auto">
-              Registration Link!!
+            <a className="registration-button m-2 mx-auto">
+              Close Registration
             </a>
             <a
               href="https://drive.google.com/file/d/169Eq0CLizBQMClZ6N_znCRmBUgx16CB8/view?usp=sharing"

@@ -52,15 +52,15 @@ function HomeIndo() {
           <div className="link-web mx-auto text-center">
             <a
               className="btn btn-action text-center me-lg-5 "
-              onClick={() => handleOpenModal("/indoonline", indonesiaOnlineTerms)}
+              onClick={() => handleOpenModal("/homeindo", indonesiaOnlineTerms)}
             >
-              Kompetisi Online{" "}<i className="fa-solid fa-earth-americas"></i>
+              Close Regist{" "}<i className="fa-solid fa-earth-americas"></i>
             </a>
             <a
               className="btn btn-action text-center me-lg-5 "
-              onClick={() => handleOpenModal("/indooffline", indonesiaOfflineTerms)}
+              onClick={() => handleOpenModal("/homeindo", indonesiaOfflineTerms)}
             >
-              Kompetisi Offline{" "}<i className="fa-solid fa-earth-americas"></i>
+              Close Regist{" "}<i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
         </div>
