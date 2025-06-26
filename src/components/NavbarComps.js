@@ -90,19 +90,7 @@ const NavbarComp = () => {
               </ul>
             </li>
             <li className="menu-item fw-bold">
-              <a className="sub-btn" href="#">
-                List of Winner <i className="fas fa-angle-down"></i>
-              </a>
-              <ul className="sub-menu">
-                <li className="sub-item">
-                  <a
-                    href="https://drive.google.com/drive/folders/1xGhWjBG2o5VbjcMQ6iWOnIiKerufSn_H?usp=sharing"
-                    target="_blank"
-                  >
-                    List of Winner 2025
-                  </a>
-                </li>
-              </ul>
+              <a href="/listofwinner">List of Winner</a>
             </li>
 
             <li className="menu-item fw-bold">
