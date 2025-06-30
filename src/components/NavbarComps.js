@@ -105,6 +105,21 @@ const NavbarComp = () => {
               </ul>
             </li>
             <li className="menu-item fw-bold">
+              <a className="sub-btn" href="#">
+                Gallery <i className="fas fa-angle-down"></i>
+              </a>
+              <ul className="sub-menu">
+                <li className="sub-item">
+                  <a
+                    href="https://drive.google.com/drive/folders/1SZo9bXwGuk25rq5GYWfi2Vfww60NSenR?usp=drive_link"
+                    target="_blank"
+                  >
+                    Gallery 2025
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="menu-item fw-bold">
               <a href="/listofwinner">List of Winner</a>
             </li>
 
