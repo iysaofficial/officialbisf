@@ -84,16 +84,23 @@ const NavbarComp = () => {
                     href="https://drive.google.com/drive/folders/1f4WcyJc4bcK1Qy1KwegeLi3G8TfCtsMI?usp=drive_link"
                     target="_blank"
                   >
-                    Sertifikat Supervisor 2025
+                    Certificate Supervisor 2025
                   </a>
                 </li>
               </ul>
             </li>
             <li className="menu-item fw-bold">
               <a className="sub-btn" href="#">
-                Press Release <i className="fas fa-angle-down"></i>
+                Media Coverage <i className="fas fa-angle-down"></i>
               </a>
               <ul className="sub-menu">
+                <li className="sub-item">
+                  <a
+                    href="/NewsAlllist"
+                  >
+                    News
+                  </a>
+                </li>
                 <li className="sub-item">
                   <a
                     href="https://drive.google.com/drive/folders/1Sb6K7MZU7lvhv--ghfWzdFB7sWr0dIA5?usp=drive_link"
