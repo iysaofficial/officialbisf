@@ -131,6 +131,10 @@ const NavbarComp = () => {
             </li>
 
             <li className="menu-item fw-bold">
+              <a href="/Curation">Curation</a>
+            </li>
+
+            <li className="menu-item fw-bold">
               <a href="/Faq">Faq</a>
             </li>
             <li className="menu-item fw-bold">
