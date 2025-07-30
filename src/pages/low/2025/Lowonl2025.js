@@ -29,7 +29,7 @@ const Lowonl2025 = () => {
               Senior High School
             </a>
             <a
-              href="hhttps://drive.google.com/file/d/1plUJXvTb5b4MiFnYW3fg2JVZbXJVrQqA/view?usp=sharing"
+              href="https://drive.google.com/file/d/1plUJXvTb5b4MiFnYW3fg2JVZbXJVrQqA/view?usp=sharing"
               className="registration-button m-2 mx-auto"
             >
               Junior High School
