@@ -5,6 +5,37 @@ import React, { useEffect } from 'react';
 
 
 function ContactComps() {
+     useEffect(() => {
+        const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzdgUOy_s6zjJQTgqXQ7GX3H1_w6TvWq1hsBZgH0mSREWt3qXCKA34-qo74-jfDVbHE/exec";
+
+        const form = document.forms.namedItem("contact");
+
+        if (form) {
+        const handleSubmit = async (e) => {
+            e.preventDefault();
+            try {
+            await fetch(scriptURL, {
+                method: "POST",
+                body: new FormData(form),
+            });
+            alert("Message sent successfully!");
+            form.reset();
+            } catch (error) {
+            console.error("Error:", error);
+            alert("Failed to send Message.");
+            }
+        };
+
+        form.addEventListener("submit", handleSubmit);
+
+        // cleanup listener
+        return () => {
+            form.removeEventListener("submit", handleSubmit);
+        };
+        }
+    }, []);
+
     useEffect(() => {
         const inputs = document.querySelectorAll(".input");
 
@@ -100,20 +131,21 @@ function ContactComps() {
                         <span className="circle one"></span>
                         <span className="circle two"></span>
                     
-                        <form action="https://formspree.io/f/xjvneprn" autoComplete='off' method='POST'>
+                        <form action="" autoComplete='off' method='POST' name='contact'>
+                            <input type="hidden" name="Event" value="BISF" readOnly />
                             <h3 className="title fw-bold">Contact us</h3>
                             <div className="input-container">
-                                <input type="text" name="name" className="input" required/>
+                                <input type="text" name="Name" className="input" required/>
                                 <label htmlFor="">name</label>
                                 <span>name</span>
                             </div>
                             <div className="input-container">
-                                <input type="email" name="email" className="input" required/>
+                                <input type="email" name="Email" className="input" required/>
                                 <label htmlFor="">Email</label>
                                 <span>Email</span>
                             </div>
                             <div className="input-container textarea">
-                                <textarea name="message" className="input" required></textarea>
+                                <textarea name="Message" className="input" required></textarea>
                                 <label htmlFor="">Message</label>
                                 <span>Message</span>
                             </div>
