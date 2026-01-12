@@ -48,7 +48,7 @@ function IndonesiaOnline() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "Bali International Science Fair - Online Competition":
-        setCategoryPrice("RP 950.000");
+        setCategoryPrice("RP 1.150.000");
         break;
       default:
         break;
@@ -64,7 +64,7 @@ function IndonesiaOnline() {
   }, [navigate]);
 
   const scriptURL =
-    "";
+    "https://script.google.com/macros/s/AKfycbwkvjyDI4481DbcFp-B5deSdGAFr9Xx-Vqt4j2fXmqaaf9PeYhduM0yhh6k487fhQR28A/exec";
 
   useEffect(() => {
     const form = document.forms["regist-form"];
@@ -686,7 +686,7 @@ function IndonesiaOnline() {
               {/* GENERAL INFORMATION END */}
 
               <div className="button">
-                <input type="submit" value="CLOSE" />
+                <input type="submit" value="kirim" />
               </div>
             </form>
 

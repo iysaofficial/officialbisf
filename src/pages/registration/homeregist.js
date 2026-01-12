@@ -20,13 +20,11 @@ function HomeRegist() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <a className="btn btn-action text-center me-lg-5">
-              Close Regist{" "}
-              <i className="fa-solid fa-earth-americas"></i>
+            <a className="btn btn-action text-center me-lg-5" href="/homeindo">
+              National{" "}<i className="fa-solid fa-earth-americas"></i>
             </a>
-            <a className="btn btn-action text-center me-lg-5">
-              Close Regist{" "}
-              <i className="fa-solid fa-earth-americas"></i>
+            <a className="btn btn-action text-center me-lg-5" href="/homeinter">
+              International{" "}<i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
         </div>

@@ -48,13 +48,13 @@ export default function InternationalOnline() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "Bali International Science Fair - Online Competition":
-        setCategoryPrice("$75 USD");
+        setCategoryPrice("$105 USD");
         break;
       case "Bali International Science Fair - Online Competition + Certificate and Medal (SOUTH EAST ASIA ONLY)":
-        setCategoryPrice("$200 USD");
+        setCategoryPrice("$225 USD");
         break;
       case "Bali International Science Fair - Online Competition + Certificate and Medal (Exclude SOUTH EAST ASIA)":
-        setCategoryPrice("$250 USD");
+        setCategoryPrice("$275 USD");
         break;
       default:
         setCategoryPrice("");
@@ -72,7 +72,7 @@ export default function InternationalOnline() {
   }, [navigate]);
 
   const scriptURL =
-    "";
+    "https://script.google.com/macros/s/AKfycbzinDWi48PrWA7hUnIeEYxstJkegK8vIukOZ927RsH3uP4SajHBkpf6r4WkdY7Fj8tulA/exec";
 
     useEffect(() => {
       const form = document.forms["regist-form"];
@@ -703,7 +703,7 @@ export default function InternationalOnline() {
                 </div>
               </div>
               <div class="button">
-                <input type="submit" value="CLOSE" />
+                <input type="submit" value="Submit" />
               </div>
             </form>
 
