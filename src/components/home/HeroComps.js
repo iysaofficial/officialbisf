@@ -13,8 +13,11 @@ const HeroComps = () => {
           </p>
           <br />
           <div className="row text-center mx-auto col-lg-12">
-            <a className="registration-button m-2 mx-auto" href="/Homeregist">
+            {/* <a className="registration-button m-2 mx-auto" href="/Homeregist">
               Register Now!
+            </a> */}
+            <a className="registration-closed-button m-2 mx-auto" aria-disabled={true}>
+              Registration Closed
             </a>
             <a
               href="https://drive.google.com/file/d/169Eq0CLizBQMClZ6N_znCRmBUgx16CB8/view?usp=sharing"
