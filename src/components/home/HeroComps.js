@@ -16,7 +16,7 @@ const HeroComps = () => {
             {/* <a className="registration-button m-2 mx-auto" href="/Homeregist">
               Register Now!
             </a> */}
-            <a className="registration-closed-button m-2 mx-auto" aria-disabled={true}>
+            <a className="registration-closed-button m-2 mx-auto">
               Registration Closed
             </a>
             <a
