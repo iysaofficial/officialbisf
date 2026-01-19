@@ -20,7 +20,7 @@ const HeroComps = () => {
               Registration Closed
             </a> */}
             <a
-              href="https://drive.google.com/file/d/169Eq0CLizBQMClZ6N_znCRmBUgx16CB8/view?usp=sharing"
+              href="https://drive.google.com/file/d/18f5vQ32q7sP-HCeob6gHjQoL8jl22Xf0/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="registration-button m-2 mx-auto"
