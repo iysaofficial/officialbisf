@@ -49,6 +49,7 @@ const AboutComps = () => {
                 <img
                   src="./assets/images/logo/kecak.png"
                   className="img-fluid"
+                  alt="Kecak Dance"
                 ></img>
               </div>
             </div>

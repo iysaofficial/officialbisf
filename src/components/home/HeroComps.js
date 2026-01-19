@@ -22,6 +22,7 @@ const HeroComps = () => {
             <a
               href="https://drive.google.com/file/d/169Eq0CLizBQMClZ6N_znCRmBUgx16CB8/view?usp=sharing"
               target="_blank"
+              rel="noreferrer"
               className="registration-button m-2 mx-auto"
             >
               Guide Book

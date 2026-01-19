@@ -93,34 +93,34 @@ function ContactComps() {
                         <div className="info">
                             <div className="information">
                                 <img src="./assets/images/icon/location.png" className="contact-icon" alt="" />
-                                <a href='https://goo.gl/maps/9x18coXGCmSscKec6' target='_blank'>Jl. Kemang RT 03 RW 06</a>
+                                <a href='https://goo.gl/maps/9x18coXGCmSscKec6' target='_blank' rel='noreferrer'>Jl. Kemang RT 03 RW 06</a>
                             </div>
                             <div className="information">
                                 <img src="./assets/images/icon/email.png" className="contact-icon" alt="" />
-                                <a href='mailto:yk.ollympiad@gmail.com' target='_blank'>bisf.official@gmail.com</a>
+                                <a href='mailto:yk.ollympiad@gmail.com' target='_blank' rel='noreferrer'>bisf.official@gmail.com</a>
                             </div>
                             <div className="information">
                                 <img src="./assets/images/icon/phone.png" className="contact-icon" alt="" />
-                                <a href='https://wa.me/+6288213248890' target='_blank'>+62 882-1324-8890</a>
+                                <a href='https://wa.me/+6288213248890' target='_blank' rel='noreferrer'>+62 882-1324-8890</a>
                             </div>
                         </div>
 
                         <div className="social-media">
                             <p className='fw-bold'>Connect with us :</p>
                             <div className="social-icons">
-                                <a href="https://www.facebook.com/profile.php?id=100063979907207" target='_blank'>
+                                <a href="https://www.facebook.com/profile.php?id=100063979907207" target='_blank' rel='noreferrer'>
                                     <i className="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="https://www.instagram.com/iysa_official/" target='_blank'>
+                                <a href="https://www.instagram.com/iysa_official/" target='_blank' rel='noreferrer'>
                                     <i className="fab fa-instagram"></i>
                                 </a>
-                                <a href="https://www.youtube.com/@IYSAOfficial" target='_blank'>
+                                <a href="https://www.youtube.com/@IYSAOfficial" target='_blank' rel='noreferrer'>
                                     <i className="fab fa-youtube"></i>
                                 </a>
-                                <a href="https://www.tiktok.com/@iysa.official" target='_blank'>
+                                <a href="https://www.tiktok.com/@iysa.official" target='_blank' rel='noreferrer'>
                                     <i className="fab fa-tiktok"></i>
                                 </a>
-                                <a href="https://www.linkedin.com/company/indonesian-young-scientist-association-iysa" target='_blank'>
+                                <a href="https://www.linkedin.com/company/indonesian-young-scientist-association-iysa" target='_blank' rel='noreferrer'>
                                     <i className="fab fa-linkedin"></i>
                                 </a>
                             </div>

@@ -149,7 +149,7 @@ export default function InternationalOnline() {
         <div class="container">
           <div class="content">
             <div class="sub">FORM REGISTRATION</div>
-            <h1 class="garis-bawah"></h1>
+            <div class="garis-bawah"></div>
             <br />
             <br />
             <h4>
@@ -210,7 +210,7 @@ export default function InternationalOnline() {
 
             <form name="regist-form">
               <h1 className="text-sm md:text-lg lg:text-5xl">BIODATA</h1>
-              <h1 className="garis-bawah"></h1>
+              <div className="garis-bawah"></div>
               <div class="user-details">
                 <div class="input-box">
                   <label for="CATEGORY_PARTICIPANT" class="form-label">
@@ -408,7 +408,7 @@ export default function InternationalOnline() {
               {/* DATA SEKOLAH START */}
               {/* DATA SEKOLAH START */}
               <h1 className="text-sm md:text-lg lg:text-5xl">SCHOOL DATA</h1>
-              <h1 className="garis-bawah"></h1>
+              <div className="garis-bawah"></div>
               <div class="user-details">
                 <div class="input-box">
                   <label for="NAMA_SEKOLAH" class="form-label">
@@ -488,7 +488,7 @@ export default function InternationalOnline() {
               <h1 className="text-sm md:text-lg lg:text-5xl">
                 SUPERVISOR DATA
               </h1>
-              <h1 className="garis-bawah"></h1>
+              <div className="garis-bawah"></div>
               <div className="user-details">
                 <div class="input-box">
                   <label for="NAME_SUPERVISOR" class="form-label">
@@ -543,7 +543,7 @@ export default function InternationalOnline() {
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   DETAIL PROJECT
                 </h1>
-                <h1 className="garis-bawah"></h1>
+                <div className="garis-bawah"></div>
               </div>
               <div className="user-details">
                 <div class="input-box">
@@ -648,7 +648,7 @@ export default function InternationalOnline() {
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   GENERAL INFORMATION
                 </h1>
-                <h1 className="garis-bawah"></h1>
+                <div className="garis-bawah"></div>
               </div>
               <div className="user-details">
                 <div class="input-box">

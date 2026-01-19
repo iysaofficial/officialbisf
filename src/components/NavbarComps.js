@@ -75,7 +75,7 @@ const NavbarComp = () => {
                         </ul>
                     </li> */}
             <li className="menu-item fw-bold">
-              <a className="sub-btn" href="#">
+              <a className="sub-btn" href="#!">
                 Certifikat Supervisor <i className="fas fa-angle-down"></i>
               </a>
               <ul className="sub-menu">
@@ -83,6 +83,7 @@ const NavbarComp = () => {
                   <a
                     href="https://drive.google.com/drive/folders/1f4WcyJc4bcK1Qy1KwegeLi3G8TfCtsMI?usp=drive_link"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Certificate Supervisor 2025
                   </a>
@@ -90,7 +91,7 @@ const NavbarComp = () => {
               </ul>
             </li>
             <li className="menu-item fw-bold">
-              <a className="sub-btn" href="#">
+              <a className="sub-btn" href="#!">
                 Media Coverage <i className="fas fa-angle-down"></i>
               </a>
               <ul className="sub-menu">
@@ -105,6 +106,7 @@ const NavbarComp = () => {
                   <a
                     href="https://drive.google.com/drive/folders/1Sb6K7MZU7lvhv--ghfWzdFB7sWr0dIA5?usp=drive_link"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Press Release 2025
                   </a>
@@ -112,7 +114,7 @@ const NavbarComp = () => {
               </ul>
             </li>
             <li className="menu-item fw-bold">
-              <a className="sub-btn" href="#">
+              <a className="sub-btn" href="#!">
                 Gallery <i className="fas fa-angle-down"></i>
               </a>
               <ul className="sub-menu">
@@ -120,6 +122,7 @@ const NavbarComp = () => {
                   <a
                     href="https://drive.google.com/drive/folders/1SZo9bXwGuk25rq5GYWfi2Vfww60NSenR?usp=drive_link"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Gallery 2025
                   </a>

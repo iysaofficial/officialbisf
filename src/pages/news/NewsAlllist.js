@@ -38,8 +38,8 @@ const NewsAlllist = () => {
                 <p className="card-text">
                   Jakarta (Public Relations of MAN 4 Jakarta) - MAN 4 South Jakarta once again made brilliant achievements in the international arena. This time, as many as 8 research teams from this superior madrasa won gold and silver medals in the Bali International Science Fair (BISF) 2025 organized by the International Young Scientist Association (IYSA) on June 19-23, 2025.
                 </p>
-                <a href="https://dki.kemenag.go.id/berita/man-4-jakarta-selatan-kembali-torehkan-prestasi-internasional-di-ajang-bisf-2025-iYCZM" legacyBehavior>
-                  <a className="btn default-btn">Read More</a>
+                <a href="https://dki.kemenag.go.id/berita/man-4-jakarta-selatan-kembali-torehkan-prestasi-internasional-di-ajang-bisf-2025-iYCZM" className="btn default-btn">
+                  Read More
                 </a>
               </div>
             </div>
@@ -65,8 +65,8 @@ const NewsAlllist = () => {
 
 BISF which took place online and offline was organized by Warmadewa University, Denpasar as the host, in collaboration with MILSET ASIA, Yayasan Prestasi Belia Indonesia, BISF Organizing Committee and Indonesian Young Scientist Association (IYSA) on June 11-23, 2025. The online competition took place on June 11-13, 2025 and the offline competition took place on June 19-23, 2025...
                 </p>
-                <a href="https://pontianakpost.jawapos.com/metropolis/1466190991/sma-gembala-baik-raih-dua-emas-di-1st-bali-international-science-fair-2025" legacyBehavior>
-                  <a className="btn default-btn">Read More</a>
+                <a href="https://pontianakpost.jawapos.com/metropolis/1466190991/sma-gembala-baik-raih-dua-emas-di-1st-bali-international-science-fair-2025" className="btn default-btn">
+                  Read More
                 </a>
               </div>
             </div>

@@ -20,7 +20,7 @@ const CategoryComps = () => {
                 <div className="col-md-3 col-sm-6">
                   <div className="service-details" data-wow-delay=".1s">
                     <div className="service-head">
-                      <img src="./assets/images/icon/entrepreneurship.png"></img>
+                      <img src="./assets/images/icon/entrepreneurship.png" alt="Enterpreneurship"></img>
                     </div>
                     <div className="service-bottom">
                       <h3>Enterpeneur</h3>
@@ -32,7 +32,7 @@ const CategoryComps = () => {
                 <div className="col-md-3 col-sm-6">
                   <div className="service-details" data-wow-delay=".1s">
                     <div className="service-head">
-                    <img src="./assets/images/icon/iot.png"></img>
+                    <img src="./assets/images/icon/iot.png" alt="Electronics and IoT"></img>
                     </div>
                     <div className="service-bottom">
                       <h3>Electronics and iot</h3>
@@ -44,7 +44,7 @@ const CategoryComps = () => {
                 <div className="col-md-3 col-sm-6">
                   <div className="service-details" data-wow-delay=".1s">
                     <div className="service-head">
-                        <img src="./assets/images/icon/biology.png"></img>
+                        <img src="./assets/images/icon/biology.png" alt="Pure Science"></img>
                     </div>
                     <div className="service-bottom">
                       <h3>Pure Science</h3>
@@ -56,7 +56,7 @@ const CategoryComps = () => {
                 <div className="col-md-3 col-sm-6">
                   <div className="service-details" data-wow-delay=".1s">
                     <div className="service-head">
-                        <img src="./assets/images/icon/engineering.png"></img>
+                        <img src="./assets/images/icon/engineering.png" alt="Physic and Engineering"></img>
                     </div>
                     <div className="service-bottom">
                       <h3>physic and engineering</h3>
@@ -68,7 +68,7 @@ const CategoryComps = () => {
                 <div className="col-md-3 col-sm-6">
                   <div className="service-details" data-wow-delay=".1s">
                     <div className="service-head">
-                        <img src="./assets/images/icon/education.png"></img>
+                        <img src="./assets/images/icon/education.png" alt="Education"></img>
                     </div>
                     <div className="service-bottom">
                       <h3>Education</h3>
@@ -80,7 +80,7 @@ const CategoryComps = () => {
                 <div className="col-md-3 col-sm-6">
                   <div className="service-details" data-wow-delay=".1s">
                     <div className="service-head">
-                        <img src="./assets/images/icon/network.png"></img>
+                        <img src="./assets/images/icon/network.png" alt="Social Science"></img>
                     </div>
                     <div className="service-bottom">
                       <h3>Social Science</h3>
@@ -92,7 +92,7 @@ const CategoryComps = () => {
                 <div className="col-md-3 col-sm-6">
                   <div className="service-details" data-wow-delay=".1s">
                     <div className="service-head">
-                        <img src="./assets/images/icon/life.png"></img>
+                        <img src="./assets/images/icon/life.png" alt="Life Science"></img>
                     </div>
                     <div className="service-bottom">
                       <h3>Life Science</h3>
@@ -104,7 +104,7 @@ const CategoryComps = () => {
                 <div className="col-md-3 col-sm-6">
                   <div className="service-details" data-wow-delay=".1s">
                     <div className="service-head">
-                    <   img src="./assets/images/icon/creativity.png"></img>
+                    <img src="./assets/images/icon/creativity.png" alt="Innovation Science"></img>
                     </div>
                     <div className="service-bottom">
                       <h3>Innovation Science</h3>

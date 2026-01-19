@@ -50,18 +50,20 @@ function HomeIndo() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <a
+            <button
+              type="button"
               className="btn btn-action text-center me-lg-5 "
               onClick={() => handleOpenModal("/indoonline", indonesiaOnlineTerms)}
             >
               Online Competition{" "}<i className="fa-solid fa-earth-americas"></i>
-            </a>
-            <a
+            </button>
+            <button
+              type="button"
               className="btn btn-action text-center me-lg-5 "
               onClick={() => handleOpenModal("/indooffline", indonesiaOfflineTerms)}
             >
               Offline Competition{" "}<i className="fa-solid fa-earth-americas"></i>
-            </a>
+            </button>
           </div>
         </div>
       </section>

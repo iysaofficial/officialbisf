@@ -141,7 +141,7 @@ function IndonesiaOnline() {
         <div class="container">
           <div class="content">
             <div class="sub">FORMULIR PENDAFTARAN</div>
-            <h1 class="garis-bawah"></h1>
+            <div class="garis-bawah"></div>
             <br />
             <br />
             <h4>
@@ -203,7 +203,7 @@ function IndonesiaOnline() {
 
             <form name="regist-form">
               <h1 className="text-sm md:text-lg lg:text-5xl">BIODATA</h1>
-              <h1 className="garis-bawah"></h1>
+              <div className="garis-bawah"></div>
               <div className="user-details">
                 <div className="input-box">
                   <label className="form-label" value="Peserta Indonesia">
@@ -339,7 +339,7 @@ function IndonesiaOnline() {
               {/* DATA SEKOLAH START */}
               {/* DATA SEKOLAH START */}
               <h1 className="text-sm md:text-lg lg:text-5xl">DATA SEKOLAH</h1>
-              <h1 className="garis-bawah"></h1>
+              <div className="garis-bawah"></div>
               <div className="user-details">
                 <div className="input-box">
                   <label htmlFor="NAMA_SEKOLAH" className="form-label">
@@ -436,7 +436,7 @@ function IndonesiaOnline() {
               <h1 className="text-sm md:text-lg lg:text-5xl">
                 DATA PEMBIMBING
               </h1>
-              <h1 className="garis-bawah"></h1>
+              <div className="garis-bawah"></div>
               <div className="user-details">
                 <div class="input-box">
                   <label for="NAME_SUPERVISOR" class="form-label">
@@ -498,7 +498,7 @@ function IndonesiaOnline() {
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   DETAIL PROYEK
                 </h1>
-                <h1 className="garis-bawah"></h1>
+                <div className="garis-bawah"></div>
               </div>
               <div className="user-details">
                 <div className="input-box">
@@ -617,7 +617,7 @@ function IndonesiaOnline() {
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   INFORMASI UMUM
                 </h1>
-                <h1 className="garis-bawah"></h1>
+                <div className="garis-bawah"></div>
               </div>
               <div className="user-details">
                 <div className="input-box">
