@@ -45,7 +45,7 @@ function HomeIndo() {
                 FORMULIR REGISTRASI
               </h1>
               <h3 className="mx-auto mt-5 mb-2 text-sm md:text-lg lg:text-2xl">
-                Pilih Kategori Kompetisi untuk Registrasi BISF 2025
+                Pilih Kategori Kompetisi untuk Registrasi BISF 2026
               </h3>
             </div>
           </div>

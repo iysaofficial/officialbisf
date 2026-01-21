@@ -145,7 +145,7 @@ function IndonesiaOnline() {
             <br />
             <br />
             <h4>
-              HALLO PESERTA BISF 2025, Mohon perhatikan informasi berikut ini
+              HALO PESERTA BISF 2026, Mohon perhatikan informasi berikut ini
               sebelum mengisi formulir pendaftaran :
             </h4>
             <br />
@@ -641,7 +641,7 @@ function IndonesiaOnline() {
                 </div>
                 <div className="input-box">
                   <label for="INFORMATION_RESOURCES" className="form-label">
-                    Sumber Informasi Kompetisi BISF 2025
+                    Sumber Informasi Kompetisi BISF 2026
                   </label>
                   <select
                     type="text"
@@ -686,7 +686,7 @@ function IndonesiaOnline() {
               {/* GENERAL INFORMATION END */}
 
               <div className="button">
-                <input type="submit" value="kirim" />
+                <input type="submit" value="Kirim" />
               </div>
             </form>
 

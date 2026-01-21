@@ -145,7 +145,7 @@ export default function InternationalOffline() {
             <br />
             <br />
             <h4>
-              HELLO BISF 2025 PARTICIPANTS, Please consider the following
+              HELLO BISF 2026 PARTICIPANTS, Please consider the following
               information before filling out the registration form :
             </h4>
             <br />
@@ -647,7 +647,7 @@ export default function InternationalOffline() {
 
                 <div class="input-box">
                   <label for="INFORMATION_RESOURCES" class="form-label">
-                    BISF 2025 Competition Information Resources
+                    BISF 2026 Competition Information Resources
                   </label>
                   <select
                     type="text"
@@ -675,7 +675,7 @@ export default function InternationalOffline() {
                 </div>
               </div>
               <div class="button">
-                <input type="submit" value="submit" />
+                <input type="submit" value="Submit" />
               </div>
             </form>
 
