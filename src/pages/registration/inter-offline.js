@@ -568,8 +568,8 @@ export default function InternationalOffline() {
                       Electronics and IoT
                     </option>
                     <option value="Pure Science">Pure Science</option>
-                    <option value="Physic and Engineering">
-                      Physic and Engineering
+                    <option value="Physics and Engineering">
+                      Physics and Engineering
                     </option>
                     <option value="Education">Education</option>
                     <option value="Social Science">Social Science</option>

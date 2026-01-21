@@ -35,7 +35,7 @@ const CategoryComps = () => {
                     <img src="./assets/images/icon/iot.png" alt="Electronics and IoT"></img>
                     </div>
                     <div className="service-bottom">
-                      <h3>Electronics and iot</h3>
+                      <h3>Electronics and IoT</h3>
                       <div className="underline1"></div>
                       <div className="underline2"></div>
                     </div>
@@ -56,10 +56,10 @@ const CategoryComps = () => {
                 <div className="col-md-3 col-sm-6">
                   <div className="service-details" data-wow-delay=".1s">
                     <div className="service-head">
-                        <img src="./assets/images/icon/engineering.png" alt="Physic and Engineering"></img>
+                        <img src="./assets/images/icon/engineering.png" alt="Physics and Engineering"></img>
                     </div>
                     <div className="service-bottom">
-                      <h3>physic and engineering</h3>
+                      <h3>Physics and Engineering</h3>
                       <div className="underline1"></div>
                       <div className="underline2"></div>
                     </div>
