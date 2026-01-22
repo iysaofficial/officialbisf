@@ -28,6 +28,7 @@ function HomeIndo() {
 
   const handleAccept = () => {
     if (termsAccepted) {
+      sessionStorage.setItem("termsAccepted", "true"); // Menyimpan status setuju di sessionStorage
       setShowModal(false);
       window.location.href = redirectLink;
     } else {
