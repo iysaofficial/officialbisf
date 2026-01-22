@@ -503,6 +503,18 @@
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
+
+@media (max-width: 600px) {
+  .custom-tooltip {
+    left: 90px; /* Adjust position for mobile */
+    margin-left: -75px;
+    width: 150px; /* Make tooltip narrower */
+  }
+
+  .custom-tooltip::after {
+    left: 50%;
+  }
+}
   
   /* TERM & CONDITION END */
   /* TERM & CONDITION END */
