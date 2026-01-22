@@ -2,7 +2,8 @@ import Navigation from "../../components/NavbarComps";
 import Footer from "../../components/FooterComps";
 import '../../assets/css/Registration.css'
 import { internationalOfflineTerms, internationalOnlineTerms } from "../../pages/data/terms";
-import { useState, useEffect } from "react";
+import { useState} from "react";
+import { Link } from "react-router-dom";
 
 function HomeInter() {
   const [showModal, setShowModal] = useState(false);
@@ -109,9 +110,9 @@ function HomeInter() {
                 </div>
                 <label htmlFor="terms">
                   I have read and agree to the{" "}
-                  <a href="#" onClick={(e) => { e.preventDefault(); handleViewTerms(); }}>
+                  <Link onClick={(e) => { e.preventDefault(); handleViewTerms(); }}>
                     Terms & Conditions
-                  </a>.
+                  </Link>.
                 </label>
               </div>
               <div className="modal-actions">
