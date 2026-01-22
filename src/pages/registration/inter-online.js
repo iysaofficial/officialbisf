@@ -458,7 +458,7 @@ export default function InternationalOnline() {
                     required
                   >
                     <option value="">--Choose Your Grade--</option>
-                    <option value="Elementery">Elementery</option>
+                    <option value="Elementary">Elementary</option>
                     <option value="Junior High School">
                       Junior High School
                     </option>
@@ -574,7 +574,7 @@ export default function InternationalOnline() {
                     className="form-control"
                     required
                   >
-                    <option value="">--Pilih Kategori--</option>
+                    <option value="">--Choose Category--</option>
                     <option value="Entrepreneur">Entrepreneur</option>
                     <option value="Electronics and IoT">
                       Electronics and IoT
