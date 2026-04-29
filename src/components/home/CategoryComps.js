@@ -92,10 +92,10 @@ const CategoryComps = () => {
                 <div className="col-md-3 col-sm-6">
                   <div className="service-details" data-wow-delay=".1s">
                     <div className="service-head">
-                        <img src="./assets/images/icon/life.png" alt="Life Science"></img>
+                        <img src="./assets/images/icon/life.png" alt="Life Sciences"></img>
                     </div>
                     <div className="service-bottom">
-                      <h3>Life Science</h3>
+                      <h3>Life Sciences</h3>
                       <div className="underline1"></div>
                       <div className="underline2"></div>
                     </div>
@@ -104,10 +104,10 @@ const CategoryComps = () => {
                 <div className="col-md-3 col-sm-6">
                   <div className="service-details" data-wow-delay=".1s">
                     <div className="service-head">
-                    <img src="./assets/images/icon/creativity.png" alt="Innovation Science"></img>
+                    <img src="./assets/images/icon/creativity.png" alt="Innovation Sciences"></img>
                     </div>
                     <div className="service-bottom">
-                      <h3>Innovation Science</h3>
+                      <h3>Innovation Sciences</h3>
                       <div className="underline1"></div>
                       <div className="underline2"></div>
                     </div>

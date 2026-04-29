@@ -26,23 +26,22 @@ const AboutComps = () => {
             </p> */}
                 <p>
                   By looking at the current development and knowledge of
-                  children about science, inventions and innovations, especially
-                  in the field of science, it requires us to know the extent of
-                  students' insights, knowledge and abilities in applying their
-                  scientific knowledge.Therefore, the Indonesian Young Scientist
-                  Association (IYSA) will hold an international competition
-                  called "Bali International Science Fair" as the right learning
-                  platform to nurture our talented young inventors. active,
-                  creative and innovative.The Indonesian Young Scientist
-                  Association (IYSA) is an institution engaged in developing the
-                  potential, talents and creativity of Indonesian students in
-                  non- scientific competitions and competitions at home and
-                  abroad. Therefore, IYSA stands as a form of our deep concern
-                  in providing opportunities for Indonesian students in
-                  particular, to bring out the potential and skills needed as
-                  well as a spirit of competition that builds within them. We do
-                  this to create life improvements. Because we believe that
-                  every student has potential that can be developed.
+                  children about science, inventions and innovations, especially in
+                  the field of science, it requires us to know the extent of students’
+                  insights, knowledge. Therefore, the Yayasan Prestasi Belia
+                  Indonesia (YPBI) will hold an International competition called Bali
+                  International Science Fair (BISF) as the right learning platform to
+                  nurture our talented young inventors who are active, creative
+                  and innovative. <br/><br/>
+                  The Yayasan Prestasi Belia Indonesia (YPBI) is an institution
+                  engaged in developing the potential, talents and creativity of
+                  Indonesian students in non-scientific competitions and
+                  competitions at home and abroad. Therefore, YPBI stands as a
+                  form of our deep concern in providing opportunities for
+                  Indonesia student in particular, to bring out the potential and
+                  skills needed as well as a spirit of competition that builds within
+                  them. We do this to create life improvements. Because we
+                  believe that every student has potential that can be developed.
                 </p>
               </div>
               <div className="col-md-6  hero-image text-center">

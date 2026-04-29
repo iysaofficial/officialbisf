@@ -562,9 +562,9 @@ export default function InternationalOffline() {
                     </option>
                     <option value="Education">Education</option>
                     <option value="Social Science">Social Science</option>
-                    <option value="Life Science">Life Science</option>
-                    <option value="Innovation Science">
-                      Innovation Science
+                    <option value="Life Sciences">Life Sciences</option>
+                    <option value="Innovation Sciences">
+                      Innovation Sciences
                     </option>
                   </select>
                 </div>

@@ -25,6 +25,11 @@ const OrganizedComps = () => {
                   className="ms-1 col-6 image-iysa"
                   alt="gallery"
                 />
+                <img
+                  src="./assets/images/logo/Sekolah vokasi.jpg"
+                  className="ms-1 col-3 image-iysa"
+                  alt="gallery"
+                />
               </div>
             </div>
             <div className="row Organized-by">
