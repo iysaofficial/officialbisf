@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function IndonesiaOnline() {
   const [selectedMaxNamaLengkap, setselectedMaxNamaLengkap] = useState("");
-  const maxNameChars = 180; // batasan maksimal karakter
+  const maxNameChars = 400; // batasan maksimal karakter
   const [selectedMaxProject, setselectedMaxProject] = useState("");
   const [selectedNamaSekolah, setselectedNamaSekolah] = useState("");
   const maxSchoolChars = 500; // batasan maksimal karakter
