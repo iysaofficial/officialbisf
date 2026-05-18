@@ -48,7 +48,7 @@ function HomeInter() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <button
+            {/* <button
               type="button"
               className="btn btn-action text-center me-lg-5"
               onClick={() =>
@@ -65,6 +65,24 @@ function HomeInter() {
               }
             >
               Offline Competition{" "}<i className="fa-solid fa-earth-americas"></i>
+            </button> */}
+            <button
+              type="button"
+              className="btn btn-action text-center me-lg-5"
+              // onClick={() =>
+              //   handleOpenModal("/interonline", internationalOnlineTerms)
+              // }
+            >
+              Close Registration{" "}<i className="fa-solid fa-earth-americas"></i>
+            </button>
+            <button
+              type="button"
+              className="btn btn-action text-center me-lg-5"
+              // onClick={() =>
+              //   handleOpenModal("/interoffline", internationalOfflineTerms)
+              // }
+            >
+              Close Registration{" "}<i className="fa-solid fa-earth-americas"></i>
             </button>
           </div>
         </div>

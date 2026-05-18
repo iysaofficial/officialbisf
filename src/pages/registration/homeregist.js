@@ -19,11 +19,17 @@ function HomeRegist() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <a className="btn btn-action text-center me-lg-5" href="/homeindo">
+            {/* <a className="btn btn-action text-center me-lg-5" href="/homeindo">
               Indonesian Citizen{" "}<i className="fa-solid fa-earth-americas"></i>
             </a>
             <a className="btn btn-action text-center me-lg-5" href="/homeinter">
               International Citizen{" "}<i className="fa-solid fa-earth-americas"></i>
+            </a> */}
+            <a className="btn btn-action text-center me-lg-5" href="#">
+              Close Registration{" "}<i className="fa-solid fa-earth-americas"></i>
+            </a>
+            <a className="btn btn-action text-center me-lg-5" href="#">
+              Close Registration{" "}<i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
         </div>

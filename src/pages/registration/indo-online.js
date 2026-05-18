@@ -650,7 +650,8 @@ function IndonesiaOnline() {
               {/* GENERAL INFORMATION END */}
 
               <div className="button">
-                <input type="submit" value="Submit" />
+                {/* <input type="submit" value="Submit" /> */}
+                <input type="submit" value="Close Registration" disabled />
               </div>
             </form>
 

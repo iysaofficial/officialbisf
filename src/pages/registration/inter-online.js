@@ -692,7 +692,8 @@ export default function InternationalOnline() {
                 </div>
               </div>
               <div class="button">
-                <input type="submit" value="Submit" />
+                {/* <input type="submit" value="Submit" /> */}
+                <input type="submit" value="Close Registration" disabled />
               </div>
             </form>
 

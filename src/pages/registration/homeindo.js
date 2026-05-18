@@ -48,7 +48,7 @@ function HomeIndo() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <button
+            {/* <button
               type="button"
               className="btn btn-action text-center me-lg-5 "
               onClick={() => handleOpenModal("/indoonline", indonesiaOnlineTerms)}
@@ -61,6 +61,20 @@ function HomeIndo() {
               onClick={() => handleOpenModal("/indooffline", indonesiaOfflineTerms)}
             >
               Offline Competition{" "}<i className="fa-solid fa-earth-americas"></i>
+            </button> */}
+            <button
+              type="button"
+              className="btn btn-action text-center me-lg-5 "
+              // onClick={() => handleOpenModal("/indoonline", indonesiaOnlineTerms)}
+            >
+              Close Registration{" "}<i className="fa-solid fa-earth-americas"></i>
+            </button>
+            <button
+              type="button"
+              className="btn btn-action text-center me-lg-5 "
+              // onClick={() => handleOpenModal("/indooffline", indonesiaOfflineTerms)}
+            >
+              Close Registration{" "}<i className="fa-solid fa-earth-americas"></i>
             </button>
           </div>
         </div>
