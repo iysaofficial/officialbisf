@@ -16,9 +16,9 @@ const HeroComps = () => {
             {/* <a className="registration-button m-2 mx-auto d-flex align-items-center justify-content-center" href="/Homeregist">
               Register Now!
             </a> */}
-            <a className="registration-button m-2 mx-auto d-flex align-items-center justify-content-center" href="#">
+            <button className="registration-button m-2 mx-auto d-flex align-items-center justify-content-center" type="button">
               Close Registration
-            </a>
+            </button>
             {/* <a
               href="https://drive.google.com/file/d/18f5vQ32q7sP-HCeob6gHjQoL8jl22Xf0/view?usp=sharing"
               target="_blank"

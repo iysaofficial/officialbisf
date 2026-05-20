@@ -25,12 +25,12 @@ function HomeRegist() {
             <a className="btn btn-action text-center me-lg-5" href="/homeinter">
               International Citizen{" "}<i className="fa-solid fa-earth-americas"></i>
             </a> */}
-            <a className="btn btn-action text-center me-lg-5" href="#">
+            <button className="btn btn-action text-center me-lg-5" type="button">
               Close Registration{" "}<i className="fa-solid fa-earth-americas"></i>
-            </a>
-            <a className="btn btn-action text-center me-lg-5" href="#">
+            </button>
+            <button className="btn btn-action text-center me-lg-5" type="button">
               Close Registration{" "}<i className="fa-solid fa-earth-americas"></i>
-            </a>
+            </button>
           </div>
         </div>
       </section>

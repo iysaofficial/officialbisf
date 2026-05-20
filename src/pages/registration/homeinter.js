@@ -1,22 +1,26 @@
 import Navigation from "../../components/NavbarComps";
 import Footer from "../../components/FooterComps";
 import '../../assets/css/Registration.css'
-import { internationalOfflineTerms, internationalOnlineTerms } from "../../pages/data/terms";
+// Terms imports removed - registration closed
+// import { internationalOfflineTerms, internationalOnlineTerms } from "../../pages/data/terms";
 import { useState} from "react";
 import { Link } from "react-router-dom";
 
 function HomeInter() {
   const [showModal, setShowModal] = useState(false);
   const [termsAccepted, setTermsAccepted] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [redirectLink, setRedirectLink] = useState("");
+  // eslint-disable-next-line no-unused-vars
   const [termsContent, setTermsContent] = useState("");
 
-  const handleOpenModal = (link, terms) => {
-    setRedirectLink(link); // Set link tujuan redirect
-    setTermsContent(terms); // Set isi terms sesuai pilihan
-    setTermsAccepted(false); // Reset state persetujuan
-    setShowModal(true); // Tampilkan modal
-  };
+  // handleOpenModal removed - registration closed
+  // const handleOpenModal = (link, terms) => {
+  //   setRedirectLink(link);
+  //   setTermsContent(terms);
+  //   setTermsAccepted(false);
+  //   setShowModal(true);
+  // };
 
   const handleViewTerms = () => {
     window.open("https://drive.google.com/file/d/1KOtyI8EZO42INO4Q_IeiTmBQCc_8JtTl/view?usp=sharing", "_blank");
