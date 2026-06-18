@@ -17,7 +17,7 @@ const HeroComps = () => {
               Register Now!
             </a> */}
             <button className="registration-button m-2 mx-auto d-flex align-items-center justify-content-center" type="button">
-              Close Registration
+              Coming Soon 2027
             </button>
             {/* <a
               href="https://drive.google.com/file/d/18f5vQ32q7sP-HCeob6gHjQoL8jl22Xf0/view?usp=sharing"

@@ -25,6 +25,9 @@ import Listwinner from "./pages/low/Listwinner";
 import Lowkategori2025 from "./pages/low/2025/Lowkategori2025";
 import Lowoff2025 from "./pages/low/2025/Lowoff2025";
 import Lowonl2025 from "./pages/low/2025/Lowonl2025";
+import Lowkategori2026 from "./pages/low/2026/Lowkategori2026";
+import Lowoff2026 from "./pages/low/2026/Lowoff2026";
+import Lowonl2026 from "./pages/low/2026/Lowonl2026";
 
 import Curation from "./pages/curation/Curation";
 
@@ -53,6 +56,9 @@ function App() {
           <Route path="/lowkategori2025" element={<Lowkategori2025 />} />
           <Route path="/lowoff2025" element={<Lowoff2025 />} />
           <Route path="/lowonl2025" element={<Lowonl2025 />} />
+          <Route path="/lowkategori2026" element={<Lowkategori2026 />} />
+          <Route path="/lowoff2026" element={<Lowoff2026 />} />
+          <Route path="/lowonl2026" element={<Lowonl2026 />} />
 
           <Route path="/Curation" element={<Curation />} />
           

@@ -17,6 +17,12 @@ const Listwinner = () => {
           <br />
           <div className="row text-center mx-auto col-lg-5">
             <a
+              href="/Lowkategori2026"
+              className="registration-button m-2 mx-auto"
+            >
+              List of Winner 2026
+            </a>
+            <a
               href="/Lowkategori2025"
               className="registration-button m-2 mx-auto"
             >

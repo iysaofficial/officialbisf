@@ -1,15 +1,15 @@
-import "../assets/css/Hero.css";
-import NavbarComp from "../components/NavbarComps";
-import FooterComps from "../components/FooterComps";
+import "../../../assets/css/Hero.css";
+import NavbarComp from "../../../components/NavbarComps";
+import FooterComps from "../../../components/FooterComps";
 
-const Listofwinner = () => {
+const Lowoff2026 = () => {
   return (
     <>
       <NavbarComp />
       <section className="hero-section">
         <div className="hero-container">
           <img src="./assets/images/logo/LOGO BISF.png" alt="" />
-          <h1>List of Winner</h1>
+          <h1>List of Winner 2026</h1>
           {/* <p>
             Bali International Science Fair registration is now open! Join{" "}
             <br /> this prestigious event and have an unforgettable experience!
@@ -17,16 +17,28 @@ const Listofwinner = () => {
           <br />
           <div className="row text-center mx-auto col-lg-5">
             <a
-              href="/Lowkategori2026"
+              href="#"
               className="registration-button m-2 mx-auto"
             >
-              List of Winner 2026
+              University
             </a>
             <a
-              href="/Lowkategori2025"
+              href="#"
               className="registration-button m-2 mx-auto"
             >
-              List of Winner 2025
+              Senior High School
+            </a>
+            <a
+              href="#"
+              className="registration-button m-2 mx-auto"
+            >
+              Junior High School
+            </a>
+            <a
+              href="#"
+              className="registration-button m-2 mx-auto"
+            >
+              Elementary
             </a>
             {/* <a
               href="https://drive.google.com/file/d/169Eq0CLizBQMClZ6N_znCRmBUgx16CB8/view?usp=sharing"
@@ -43,4 +55,4 @@ const Listofwinner = () => {
   );
 };
 
-export default Listofwinner;
+export default Lowoff2026;
