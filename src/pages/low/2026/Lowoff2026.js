@@ -16,30 +16,30 @@ const Lowoff2026 = () => {
           </p> */}
           <br />
           <div className="row text-center mx-auto col-lg-5">
-            <a
+            {/* <a
               href="#"
               className="registration-button m-2 mx-auto"
             >
               University
-            </a>
-            <a
+            </a> */}
+            {/* <a
               href="#"
               className="registration-button m-2 mx-auto"
             >
               Senior High School
-            </a>
-            <a
+            </a> */}
+            {/* <a
               href="#"
               className="registration-button m-2 mx-auto"
             >
               Junior High School
-            </a>
-            <a
+            </a> */}
+            {/* <a
               href="#"
               className="registration-button m-2 mx-auto"
             >
               Elementary
-            </a>
+            </a> */}
             {/* <a
               href="https://drive.google.com/file/d/169Eq0CLizBQMClZ6N_znCRmBUgx16CB8/view?usp=sharing"
               target="_blank"
