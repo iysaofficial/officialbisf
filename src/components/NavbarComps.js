@@ -81,9 +81,7 @@ const NavbarComp = () => {
               <ul className="sub-menu">
                 <li className="sub-item">
                   <a
-                    href="https://drive.google.com/drive/folders/12_-D3mlChGcbATpmjDAWF4ypgHD0IIwx?usp=sharing"
-                    target="_blank"
-                    rel="noreferrer"
+                    href="/certsupervisor2026"
                   >
                     Certificate Supervisor 2026
                   </a>

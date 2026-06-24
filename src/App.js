@@ -18,6 +18,7 @@ import InternationalOnline from "./pages/registration/inter-online";
 import InternationalOffline from "./pages/registration/inter-offline";
 import Thankyouinter from "./pages/registration/thankyouinter";
 import Thankyouindo from "./pages/registration/thankyouindo";
+import CertSupervisor2026 from "./pages/registration/certsupervisor2026";
 
 
 import Listofwinner from "./pages/Listofwinner";
@@ -50,6 +51,7 @@ function App() {
           <Route path="/interoffline" element={<InternationalOffline />} />
           <Route path="/thankyouinter" element={<Thankyouinter />} />
           <Route path="/thankyouindo" element={<Thankyouindo />} />
+          <Route path="/certsupervisor2026" element={<CertSupervisor2026 />} />
 
           <Route path="/listofwinner" element={<Listofwinner />} />
           <Route path="/listwinner" element={<Listwinner />} />
