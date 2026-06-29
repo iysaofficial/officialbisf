@@ -27,14 +27,14 @@ function CertSupervisor2026() {
             >
               Certificate Supervisor 2026 Online <i className="fa-solid fa-globe"></i>
             </a>
-            {/* <a
+            <a
               className="btn btn-action text-center me-lg-5 m-2"
-              href="https://drive.google.com/drive/folders/12_-D3mlChGcbATpmjDAWF4ypgHD0IIwx?usp=sharing"
+              href="https://drive.google.com/drive/folders/1Ioq1aeCdn4yJ8qUDWWDKGdHLG_Y6piZe?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
               Certificate Supervisor 2026 Offline <i className="fa-solid fa-building"></i>
-            </a> */}
+            </a>
           </div>
         </div>
       </section>
