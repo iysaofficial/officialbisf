@@ -111,6 +111,15 @@ const NavbarComp = () => {
                 </li>
                 <li className="sub-item">
                   <a
+                    href="https://drive.google.com/file/d/1scVhoOraZuThDj15sFWVyS8g7kM4t_t0/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Press Release 2026
+                  </a>
+                </li>
+                <li className="sub-item">
+                  <a
                     href="https://drive.google.com/drive/folders/1Sb6K7MZU7lvhv--ghfWzdFB7sWr0dIA5?usp=drive_link"
                     target="_blank"
                     rel="noreferrer"
