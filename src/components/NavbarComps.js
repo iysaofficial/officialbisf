@@ -136,6 +136,15 @@ const NavbarComp = () => {
               <ul className="sub-menu">
                 <li className="sub-item">
                   <a
+                    href="https://drive.google.com/drive/folders/1T57XBWPPI7O8eMwBIRFUFAXQ4bCUG1Hf?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Gallery 2026
+                  </a>
+                </li>
+                <li className="sub-item">
+                  <a
                     href="https://drive.google.com/drive/folders/1SZo9bXwGuk25rq5GYWfi2Vfww60NSenR?usp=drive_link"
                     target="_blank"
                     rel="noreferrer"
