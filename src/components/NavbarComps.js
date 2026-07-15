@@ -104,9 +104,16 @@ const NavbarComp = () => {
               <ul className="sub-menu">
                 <li className="sub-item">
                   <a
+                    href="/news2026"
+                  >
+                    News 2026
+                  </a>
+                </li>
+                <li className="sub-item">
+                  <a
                     href="/NewsAlllist"
                   >
-                    News
+                    News 2025
                   </a>
                 </li>
                 <li className="sub-item">

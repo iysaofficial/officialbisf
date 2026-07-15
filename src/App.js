@@ -33,6 +33,7 @@ import Lowonl2026 from "./pages/low/2026/Lowonl2026";
 import Curation from "./pages/curation/Curation";
 
 import NewsAlllist from "./pages/news/NewsAlllist";
+import News2026 from "./pages/news/News2026";
 
 function App() {
   return (
@@ -65,6 +66,7 @@ function App() {
           <Route path="/Curation" element={<Curation />} />
           
           <Route path="/NewsAlllist" element={<NewsAlllist />} />
+          <Route path="/news2026" element={<News2026 />} />
           
         </Routes>
       </Router>
