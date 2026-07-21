@@ -19,6 +19,15 @@ const newsList2025 = [
     link: "https://pontianakpost.jawapos.com/metropolis/1466190991/sma-gembala-baik-raih-dua-emas-di-1st-bali-international-science-fair-2025",
     image: "/assets/images/news/22025.webp",
   },
+  {
+    id: 3,
+    title: "Riset Gulma Pantai, Siswa MAN 3 Jembrana Raih Emas di Ajang Sains Internasional",
+    description:
+      "Tim riset dari Madrasah Aliyah Negeri (MAN) 3 Jembrana, Bali, berhasil meraih medali emas dalam ajang Bali International Science Fair (BISF) 2025 lewat riset berjudul 'Pemanfaatan Tanaman Katang-Katang untuk Mengendalikan Hama Kutu Kebul pada Buah Kakao'. Kompetisi ini diikuti oleh 394 tim dari 16 negara.",
+    link: "https://news.schoolmedia.id/tokoh/354/riset-gulma-pantai-siswa-man-3-jembrana-raih-emas-di-ajang-sains-internasional",
+    image: "/assets/images/news/32025.png",
+    fallbackImage: "https://s3.schoolmedia.id/05-news-sm/uploads/konten/685c62943a68e0.png",
+  },
 ];
 
 const NewsAlllist = () => {
@@ -98,6 +107,11 @@ const NewsAlllist = () => {
                         height: "100%",
                         objectFit: "cover",
                         objectPosition: "center",
+                      }}
+                      onError={(e) => {
+                        if (news.fallbackImage && e.target.src !== news.fallbackImage) {
+                          e.target.src = news.fallbackImage;
+                        }
                       }}
                     />
                   </div>
