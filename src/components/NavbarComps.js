@@ -162,6 +162,38 @@ const NavbarComp = () => {
               </ul>
             </li>
             <li className="menu-item fw-bold">
+              <a className="sub-btn" href="#!">
+                Guide Book <i className="fas fa-angle-down"></i>
+              </a>
+              <ul className="sub-menu">
+                <li className="sub-item">
+                  <a href="https://drive.google.com/file/d/18f5vQ32q7sP-HCeob6gHjQoL8jl22Xf0/view?usp=sharing" target="_blank" rel="noreferrer">
+                    2026
+                  </a>
+                </li>
+                <li className="sub-item">
+                  <a href="https://drive.google.com/file/d/169Eq0CLizBQMClZ6N_znCRmBUgx16CB8/view?usp=sharing" target="_blank" rel="noreferrer">
+                    2025
+                  </a>
+                </li>
+                {/* <li className="sub-item">
+                  <a href="#!" target="_blank" rel="noreferrer">
+                    2024
+                  </a>
+                </li>
+                <li className="sub-item">
+                  <a href="#!" target="_blank" rel="noreferrer">
+                    2023
+                  </a>
+                </li>
+                <li className="sub-item">
+                  <a href="#!" target="_blank" rel="noreferrer">
+                    2022
+                  </a>
+                </li> */}
+              </ul>
+            </li>
+            <li className="menu-item fw-bold">
               <a href="/listofwinner">List of Winner</a>
             </li>
 
