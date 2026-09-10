@@ -31,6 +31,7 @@ import Lowoff2026 from "./pages/low/2026/Lowoff2026";
 import Lowonl2026 from "./pages/low/2026/Lowonl2026";
 
 import Curation from "./pages/curation/Curation";
+import CurationTahun from "./pages/curation/CurationTahun";
 
 import NewsAlllist from "./pages/news/NewsAlllist";
 import News2026 from "./pages/news/News2026";
@@ -64,6 +65,7 @@ function App() {
           <Route path="/lowonl2026" element={<Lowonl2026 />} />
 
           <Route path="/Curation" element={<Curation />} />
+          <Route path="/Curation/:tahun" element={<CurationTahun />} />
           
           <Route path="/NewsAlllist" element={<NewsAlllist />} />
           <Route path="/news2026" element={<News2026 />} />

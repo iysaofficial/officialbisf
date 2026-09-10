@@ -1,0 +1,115 @@
+/*
+ * Halaman daftar berkas kurasi.
+ *
+ * Berdiri sendiri, tidak menumpang `Hero.css`: hero adalah gambar latar penuh
+ * dengan teks di tengah, dan daftar berkas justru menuntut kebalikannya —
+ * latar tenang, teks rata kiri, baris yang bisa dipindai. Menumpanginya berarti
+ * melawan setiap aturannya satu per satu.
+ */
+
+.kurasi-section {
+  background: #f4f6fb;
+  min-height: 70vh;
+  padding: 7rem 1.25rem 4rem;
+}
+
+.kurasi-container {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.kurasi-kembali {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #032851;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.kurasi-kembali:hover { text-decoration: underline; }
+
+.kurasi-container h1 {
+  margin: 0 0 0.35rem;
+  color: #032851;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  font-weight: 700;
+}
+
+.kurasi-ringkas {
+  margin: 0 0 1.75rem;
+  color: #5b6273;
+  font-size: 0.9rem;
+}
+
+.kurasi-kabar {
+  margin: 2.5rem 0;
+  color: #5b6273;
+  font-size: 0.95rem;
+}
+
+.kurasi-daftar { display: grid; gap: 1rem; }
+
+.kurasi-butir {
+  background: #fff;
+  border: 1px solid #dfe3ec;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.kurasi-butir h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0.9rem 1.1rem;
+  border-bottom: 1px solid #eef1f6;
+  color: #1b2333;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.kurasi-butir h2 span {
+  flex: none;
+  color: #8b93a5;
+  font-variant-numeric: tabular-nums;
+}
+
+.kurasi-butir ul { margin: 0; padding: 0; list-style: none; }
+
+.kurasi-butir li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.1rem;
+  border-top: 1px solid #f2f4f8;
+  font-size: 0.88rem;
+}
+.kurasi-butir li:first-child { border-top: 0; }
+
+/* Nama berkas kurasi panjang-panjang dan sering hanya berbeda di ujungnya —
+   "..._Innovative_Science_I3O_2026.pdf" — jadi ia harus membungkus, bukan
+   dipotong. */
+.kurasi-butir li a,
+.kurasi-butir li span:last-child {
+  min-width: 0;
+  color: #032851;
+  word-break: break-word;
+}
+.kurasi-butir li a:hover { text-decoration: underline; }
+
+.kurasi-jenis {
+  flex: none;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.kurasi-jenis.administrasi { background: #eef1f6; color: #5b6273; }
+.kurasi-jenis.dokumentasi  { background: #e6f2f2; color: #1a6a6a; }
+
+@media (max-width: 480px) {
+  .kurasi-section { padding-top: 6rem; }
+  .kurasi-butir li { flex-wrap: wrap; }
+}
