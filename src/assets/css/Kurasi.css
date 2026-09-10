@@ -2,19 +2,30 @@
  * Halaman daftar berkas kurasi.
  *
  * Berdiri sendiri, tidak menumpang `Hero.css`: hero adalah gambar latar penuh
- * dengan teks di tengah, dan daftar berkas justru menuntut kebalikannya —
- * latar tenang, teks rata kiri, baris yang bisa dipindai. Menumpanginya berarti
- * melawan setiap aturannya satu per satu.
+ * setinggi layar dengan teks di tengah, dan daftar berkas menuntut
+ * kebalikannya — latar tenang, teks rata kiri, isi yang bisa dipindai.
  */
 
+/*
+ * Navbar situs ini `position: fixed` dan MEMBUNGKUS jadi dua baris pada lebar
+ * menengah — sebelas menu tidak muat satu baris. Tingginya karena itu berubah
+ * menurut lebar layar, dan padding tunggal yang cukup di satu lebar akan
+ * tertutupi di lebar lain. Nilainya diberi kelonggaran di setiap titik.
+ */
+/*
+ * `padding-top` di sini cuma nilai awal sebelum JavaScript mengukur tinggi
+ * header yang sebenarnya — lihat catatan di CurationTahun.js. Nilainya
+ * sengaja cukup besar supaya halaman tidak berkedip dengan judul tertutup
+ * pada frame pertama.
+ */
 .kurasi-section {
   background: #f4f6fb;
   min-height: 70vh;
-  padding: 7rem 1.25rem 4rem;
+  padding: 8rem 1.25rem 4rem;
 }
 
 .kurasi-container {
-  max-width: 52rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -47,69 +58,60 @@
   font-size: 0.95rem;
 }
 
-.kurasi-daftar { display: grid; gap: 1rem; }
+.kurasi-kartu-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
 
-.kurasi-butir {
+.kurasi-kartu {
+  position: relative;
+  display: block;
+  padding: 1.1rem 1.15rem;
   background: #fff;
   border: 1px solid #dfe3ec;
   border-radius: 12px;
-  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
 }
 
-.kurasi-butir h2 {
-  display: flex;
-  align-items: baseline;
-  gap: 0.6rem;
-  margin: 0;
-  padding: 0.9rem 1.1rem;
-  border-bottom: 1px solid #eef1f6;
-  color: #1b2333;
+a.kurasi-kartu:hover {
+  border-color: #032851;
+  box-shadow: 0 6px 18px rgba(3, 40, 81, 0.09);
+  transform: translateY(-1px);
+}
+
+.kurasi-kartu h2 {
+  margin: 0 0 0.35rem;
+  color: #032851;
   font-size: 0.98rem;
   font-weight: 700;
+  line-height: 1.35;
 }
 
-.kurasi-butir h2 span {
-  flex: none;
-  color: #8b93a5;
-  font-variant-numeric: tabular-nums;
+/*
+ * Nama berkas kurasi panjang, tidak berspasi, dan sering hanya berbeda di
+ * ujungnya — "..._Life_Sciences-1786692300149.pdf". Ia harus membungkus;
+ * dipotong dengan elipsis justru menghapus bagian yang membedakannya.
+ */
+.kurasi-nama {
+  margin: 0;
+  color: #7b8296;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  word-break: break-all;
 }
 
-.kurasi-butir ul { margin: 0; padding: 0; list-style: none; }
-
-.kurasi-butir li {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.65rem 1.1rem;
-  border-top: 1px solid #f2f4f8;
-  font-size: 0.88rem;
-}
-.kurasi-butir li:first-child { border-top: 0; }
-
-/* Nama berkas kurasi panjang-panjang dan sering hanya berbeda di ujungnya —
-   "..._Innovative_Science_I3O_2026.pdf" — jadi ia harus membungkus, bukan
-   dipotong. */
-.kurasi-butir li a,
-.kurasi-butir li span:last-child {
-  min-width: 0;
-  color: #032851;
-  word-break: break-word;
-}
-.kurasi-butir li a:hover { text-decoration: underline; }
-
-.kurasi-jenis {
-  flex: none;
-  padding: 0.12rem 0.5rem;
+.kurasi-badge {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  padding: 0.14rem 0.55rem;
   border-radius: 999px;
+  background: #e6f2f2;
+  color: #1a6a6a;
   font-size: 0.68rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-.kurasi-jenis.administrasi { background: #eef1f6; color: #5b6273; }
-.kurasi-jenis.dokumentasi  { background: #e6f2f2; color: #1a6a6a; }
-
-@media (max-width: 480px) {
-  .kurasi-section { padding-top: 6rem; }
-  .kurasi-butir li { flex-wrap: wrap; }
+  letter-spacing: 0.05em;
 }
