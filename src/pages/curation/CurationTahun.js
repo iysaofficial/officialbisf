@@ -1,54 +1,89 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import "../../assets/css/Hero.css";
 import "../../assets/css/Kurasi.css";
 import NavbarComp from "../../components/NavbarComps";
 import FooterComps from "../../components/FooterComps";
-import { ambilBerkasKurasi } from "../../lib/kurasiApi";
+import { ambilBerkasKurasi, berkasTampil } from "../../lib/kurasiApi";
 
 /**
  * Berkas kurasi satu edisi, dibaca langsung dari dasbor.
  *
- * ── Kenapa tidak disalin ke situs ini ─────────────────────────────────────
+ * ── Kenapa kartu, bukan daftar bernomor butir ─────────────────────────────
  *
- * Edisi sebelumnya memakai tautan Google Drive yang ditulis di kode. Cara itu
- * bekerja tepat satu kali: begitu ada berkas ditambahkan, diganti, atau
- * ditarik, situsnya tidak ikut tahu — dan yang membetulkannya harus orang
- * yang bisa deploy. Di sini daftarnya datang dari sumber yang sama dengan
- * yang dipakai proses kurasi itu sendiri.
+ * Versi pertama meniru bentuk dasbor: dikelompokkan per butir, bernomor,
+ * tiap baris berlabel "Administrasi". Itu bahasa kurator. Pengunjung situs
+ * tidak menilai butir; ia mencari satu dokumen dan ingin tahu apakah ada.
  *
- * ── Kenapa dikelompokkan per butir ────────────────────────────────────────
+ * Karena itu judul kartunya nama dokumennya — "SK Pembentukan Tim Juri" —
+ * bukan nama berkasnya. Nama berkas tetap ditampilkan, kecil, karena itu yang
+ * akan orang lihat setelah mengunduh.
  *
- * Kurator memeriksa satu butir pada satu waktu, dan itu pula bentuk yang
- * dicari pengunjung: "mana berkas untuk butir Juri", bukan satu daftar rata
- * berisi puluhan nama berkas yang harus dibaca satu per satu.
+ * ── Kenapa hanya dokumentasi yang dilencanai ──────────────────────────────
+ *
+ * Sepuluh dari sebelas berkas administrasi, jadi lencana "Administrasi" pada
+ * hampir semuanya tidak memisahkan apa pun — ia cuma sepuluh kata yang sama
+ * berulang. Yang membedakan justru yang sedikit.
  */
 const CurationTahun = () => {
   const { tahun } = useParams();
-  const [butir, setButir] = useState(null);
+  const [berkas, setBerkas] = useState(null);
   const [galat, setGalat] = useState(false);
+
+  /*
+   * Jarak dari atas diukur, bukan ditebak lewat breakpoint.
+   *
+   * `header` situs ini `position: fixed`, dan tingginya berubah TIDAK
+   * monoton terhadap lebar layar: di bawah 1400px ia hamburger satu baris
+   * pendek, di sekitar 1400 seluruh menu tampil tapi belum muat sehingga
+   * membungkus jadi dua baris — paling tinggi justru di sini — lalu di atas
+   * ~1800 muat satu baris lagi dan memendek kembali.
+   *
+   * Nilai tetap karena itu selalu salah di salah satu dari ketiganya:
+   * menutupi judul di satu lebar, atau menyisakan ruang kosong sepertiga
+   * layar di lebar lain. Mengukurnya benar di ketiganya, dan tetap benar
+   * kalau suatu hari ada menu ditambahkan.
+   */
+  const wadah = useRef(null);
+
+  useEffect(() => {
+    const kop = document.querySelector("header");
+    if (!kop || !wadah.current) return undefined;
+
+    const sesuaikan = () => {
+      if (wadah.current) {
+        wadah.current.style.paddingTop = `${kop.offsetHeight + 48}px`;
+      }
+    };
+    sesuaikan();
+
+    const pengamat = new ResizeObserver(sesuaikan);
+    pengamat.observe(kop);
+    window.addEventListener("resize", sesuaikan);
+    return () => {
+      pengamat.disconnect();
+      window.removeEventListener("resize", sesuaikan);
+    };
+  }, []);
 
   useEffect(() => {
     let batal = false;
-    setButir(null);
+    setBerkas(null);
     setGalat(false);
     ambilBerkasKurasi(tahun)
-      .then((d) => { if (!batal) setButir(d); })
+      .then((d) => { if (!batal) setBerkas(berkasTampil(d)); })
       .catch(() => { if (!batal) setGalat(true); });
     return () => { batal = true; };
   }, [tahun]);
 
-  const jumlah = (butir ?? []).reduce((n, b) => n + b.berkas.length, 0);
-
   return (
     <>
       <NavbarComp />
-      <section className="kurasi-section">
+      <section className="kurasi-section" ref={wadah}>
         <div className="kurasi-container">
           <Link to="/Curation" className="kurasi-kembali">← Curation</Link>
           <h1>Curation {tahun}</h1>
 
-          {butir === null && !galat && <p className="kurasi-kabar">Loading…</p>}
+          {berkas === null && !galat && <p className="kurasi-kabar">Loading…</p>}
 
           {galat && (
             <p className="kurasi-kabar">
@@ -59,34 +94,32 @@ const CurationTahun = () => {
           {/*
             Daftar kosong dan gagal memuat sengaja dibedakan. Keduanya
             menampilkan halaman tanpa berkas, tapi yang satu berarti "belum
-            ada" dan yang lain "coba lagi" — dan pengunjung yang disuruh
-            menunggu untuk sesuatu yang memang belum ada akan menunggu selamanya.
+            ada" dan yang lain "coba lagi" — pengunjung yang disuruh menunggu
+            untuk sesuatu yang memang belum ada akan menunggu selamanya.
           */}
-          {butir !== null && butir.length === 0 && (
+          {berkas !== null && berkas.length === 0 && (
             <p className="kurasi-kabar">No documents have been published for this edition yet.</p>
           )}
 
-          {butir !== null && butir.length > 0 && (
+          {berkas !== null && berkas.length > 0 && (
             <>
-              <p className="kurasi-ringkas">{jumlah} documents · {butir.length} criteria</p>
-              <div className="kurasi-daftar">
-                {butir.map((b) => (
-                  <div className="kurasi-butir" key={b.nomor}>
-                    <h2><span>{b.nomor}</span>{b.butir}</h2>
-                    <ul>
-                      {b.berkas.map((f, i) => (
-                        <li key={i}>
-                          <span className={`kurasi-jenis ${f.jenis}`}>{f.jenis}</span>
-                          {f.url ? (
-                            <a href={f.url} target="_blank" rel="noreferrer">{f.nama}</a>
-                          ) : (
-                            <span>{f.nama}</span>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+              <p className="kurasi-ringkas">{berkas.length} documents</p>
+              <div className="kurasi-kartu-grid">
+                {berkas.map((f, i) => {
+                  const Kartu = f.url ? "a" : "div";
+                  const props = f.url
+                    ? { href: f.url, target: "_blank", rel: "noreferrer" }
+                    : {};
+                  return (
+                    <Kartu className="kurasi-kartu" key={i} {...props}>
+                      {f.jenis === "dokumentasi" && (
+                        <span className="kurasi-badge">Dokumentasi</span>
+                      )}
+                      <h2>{f.slot}</h2>
+                      <p className="kurasi-nama">{f.nama}</p>
+                    </Kartu>
+                  );
+                })}
               </div>
             </>
           )}

@@ -38,3 +38,42 @@ export async function ambilBerkasKurasi(tahun) {
   const seksi = (d?.sections ?? []).find((s) => s.key === "berkas_kurasi");
   return seksi?.isi ?? [];
 }
+
+/** Berkas yang berlaku untuk seluruh kategori, bukan satu kategori saja. */
+const gabungan = (f) => !f.kategori || f.kategori === "Semua";
+
+/**
+ * Daftar berkas yang ditampilkan: rata, tanpa butir, tanpa duplikat kategori.
+ *
+ * ── Kenapa yang per kategori disembunyikan ───────────────────────────────
+ *
+ * Sebagian dokumen terbit satu kali per kategori lomba — SK juri BISF terbit
+ * delapan kali — dan di sebelahnya ada satu berkas gabungan yang isinya
+ * mencakup semuanya. Menampilkan kesembilannya membuat satu butir memakan
+ * layar penuh berisi berkas yang bagi pengunjung terlihat sama, dan yang
+ * gabungan tenggelam di antaranya.
+ *
+ * Penyaringannya per SLOT, bukan menyeluruh: kalau sebuah slot ternyata TIDAK
+ * punya berkas gabungan, yang per kategori tetap ditampilkan. Menghilangkan
+ * keduanya berarti dokumen yang ada menjadi tidak bisa diakses sama sekali.
+ *
+ * ── Kenapa rata, tanpa pengelompokan butir ───────────────────────────────
+ *
+ * Nomor butir adalah bahasa kurator, bukan bahasa pengunjung. Yang dicari
+ * orang di sini "SK juri ada tidak", bukan "butir tiga isinya apa".
+ */
+export function berkasTampil(butir) {
+  const perSlot = new Map();
+  for (const b of butir ?? []) {
+    for (const f of b.berkas ?? []) {
+      if (!perSlot.has(f.slot)) perSlot.set(f.slot, []);
+      perSlot.get(f.slot).push(f);
+    }
+  }
+  const hasil = [];
+  for (const berkas of perSlot.values()) {
+    const utama = berkas.filter(gabungan);
+    hasil.push(...(utama.length > 0 ? utama : berkas));
+  }
+  return hasil;
+}
