@@ -16,7 +16,16 @@ header{
     background-color: #b1b1b1fe;
     /* background-image: url(../../../public/assets/images/logo/footer.jpg); */
     box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
-    padding: 0 100px;
+    /*
+     * Tepi kiri-kanan ikut menyempit di layar yang lebih sempit.
+     *
+     * 100px tetap memakan 200px sebelum satu menu pun digambar. Bersama jarak
+     * antarmenu di bawah, itulah yang membuat baris menunya tidak muat di
+     * layar 1400-1750px — dan yang tidak muat bukannya digeser, melainkan
+     * dipatahkan di tengah tulisannya: "Certificate" di baris atas,
+     * "Supervisor" di baris bawah.
+     */
+    padding: 0 clamp(20px, 4vw, 100px);
     transition: 0.6s;
 }
 
@@ -46,15 +55,37 @@ header .navigation .menu{
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none;
     user-select: none;
 }
 
 .menu-item > a{
     color: #fff;
-    font-size: 1em;
+    /*
+     * ── Kenapa tiga nilai ini diikat ke lebar layar ──────────────────────
+     *
+     * Sepuluh menu, tiga di antaranya dua kata ("Certificate Supervisor",
+     * "Media Coverage", "List of Winner"), dan barisnya butuh ~1750px untuk
+     * muat utuh. Menu hamburger baru mengambil alih di bawah 1400px, jadi ada
+     * jalur selebar 350px tempat menunya harus tampil horizontal padahal
+     * tidak muat.
+     *
+     * Yang terjadi di jalur itu bukan meluber keluar layar — `white-space`
+     * bawaan membolehkan tulisannya patah, jadi tiap menu dua kata pecah jadi
+     * dua baris. Bilah menu jadi setinggi dua baris, kata keduanya
+     * ("Supervisor", "Coverage", "Winner") melayang sendirian di bawah, dan
+     * panah dropdown-nya tertinggal di baris atas. Terlihat seperti menu yang
+     * rusak, bukan menu yang kesempitan.
+     *
+     * `nowrap` yang melarang patahnya; kedua `clamp` yang membuatnya tidak
+     * perlu patah — jarak dan ukuran huruf mengecil lebih dulu, dan pada
+     * 1400px seluruh barisnya muat dengan sisa.
+     */
+    white-space: nowrap;
+    font-size: clamp(0.82rem, 0.62vw + 0.5rem, 1em);
     text-decoration: none;
-    margin: 20px;
+    margin: 20px clamp(7px, 0.85vw, 20px);
     padding: 25px 0;
 }
 
