@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import $ from "jquery";
 
 import "../assets/css/Navbar.css";
+import { usePendaftaran } from "../lib/pendaftaran";
 
 const NavbarComp = () => {
+  // Guide Book edisi berjalan + Registration mengikuti dasbor IYSA.
+  const { identitas, keadaan, guidebook } = usePendaftaran();
   useEffect(() => {
     // jquery for toggle dropdown menus
     $(document).ready(function () {
@@ -166,11 +169,27 @@ const NavbarComp = () => {
                 Guide Book <i className="fas fa-angle-down"></i>
               </a>
               <ul className="sub-menu">
+                {guidebook && (
+                  <>
+                    <li className="sub-item">
+                      <a href={guidebook.url} target="_blank" rel="noreferrer" data-iysa-panduan="BISF">
+                        {identitas?.tahun ?? "Guide Book"}
+                      </a>
+                    </li>
+                    <li className="sub-item">
+                      <a href={guidebook.url} target="_blank" rel="noreferrer" data-iysa-panduan="BISF" data-iysa-panduan-jenis="tnc">
+                        Terms &amp; Conditions
+                      </a>
+                    </li>
+                  </>
+                )}
+                {identitas?.tahun !== "2026" && (
                 <li className="sub-item">
                   <a href="https://drive.google.com/file/d/18f5vQ32q7sP-HCeob6gHjQoL8jl22Xf0/view?usp=sharing" target="_blank" rel="noreferrer">
                     2026
                   </a>
                 </li>
+                )}
                 <li className="sub-item">
                   <a href="https://drive.google.com/file/d/169Eq0CLizBQMClZ6N_znCRmBUgx16CB8/view?usp=sharing" target="_blank" rel="noreferrer">
                     2025
@@ -193,6 +212,11 @@ const NavbarComp = () => {
                 </li> */}
               </ul>
             </li>
+            {keadaan === "buka" && (
+              <li className="menu-item fw-bold">
+                <a href="/Homeregist">Registration</a>
+              </li>
+            )}
             <li className="menu-item fw-bold">
               <a href="/listofwinner">List of Winner</a>
             </li>
